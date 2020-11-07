@@ -5,9 +5,9 @@ import { IonicModule } from '@ionic/angular';
 import { NgCalendarModule  } from 'ionic2-calendar';
 import { CalendarPageRoutingModule } from '../calendar/calendar-routing.module';
 import { registerLocaleData } from '@angular/common';
-import localeDe from '@angular/common/locales/de';
+import localeEn from '@angular/common/locales/en';
 import { CalendarPage } from './calendar.page';
-registerLocaleData(localeDe);
+registerLocaleData(localeEn, "en");
  
 @NgModule({
   imports: [
@@ -19,7 +19,7 @@ registerLocaleData(localeDe);
   ],
   declarations: [CalendarPage],
   providers: [
-    { provide: LOCALE_ID, useValue: 'de-DE' }
+    { provide: LOCALE_ID, useValue: 'En' }
   ]
 })
 export class CalendarPageModule {} 
