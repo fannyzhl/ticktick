@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardPage implements OnInit {
 
+  componentes: Componente [] =[
+    {
+      name: "New Task",
+      redirectTo: '/new-task'
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+interface Componente {
+  name: string;
+  redirectTo: string;
 }

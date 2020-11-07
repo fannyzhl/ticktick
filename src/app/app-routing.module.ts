@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+  },
+  {
+    path: 'new-task',
+    loadChildren: () => import('./pages/new-task/new-task.module').then( m => m.NewTaskPageModule)
   }
 ];
 @NgModule({

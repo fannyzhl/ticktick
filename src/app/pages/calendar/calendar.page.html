@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar color="primary">
     <ion-title>
       Ionic Calendar
@@ -8,7 +8,7 @@
 
 <ion-content>
   <ion-row>
-    <!-- Move back one screen of the slides  -->
+     Move back one screen of the slides  
     <ion-col size="2">
       <ion-button fill="clear" (click)="back()">
         <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
@@ -19,7 +19,7 @@
       <h2>{{ viewTitle }}</h2>
     </ion-col>
  
-    <!--  Move forward one screen of the slides  -->
+    Move forward one screen of the slides  
     <ion-col size="2">
       <ion-button fill="clear" (click)="next()">
         <ion-icon name="arrow-forward" slot="icon-only"></ion-icon>
@@ -34,8 +34,8 @@
     (onTitleChanged)="onViewTitleChanged($event)"
   >
   </calendar>
-</ion-content>
-<!-- <ion-header>
+</ion-content> -->
+ <ion-header>
   <ion-toolbar color="primary">
     <ion-title>
       Ionic Calendar
@@ -63,7 +63,7 @@
  
   <ion-row>
     <ion-col size="6">
-      <ion-button (click)="createRandomEvents()" expand="block" fill="outline">
+      <ion-button (click)="createStaticAllDayEvents()" expand="block" fill="outline">
         Add random events
       </ion-button>
     </ion-col>
@@ -75,7 +75,7 @@
   </ion-row>
  
   <ion-row>
-    //Move back one screen of the slides 
+    <!-- //Move back one screen of the slides  -->
     <ion-col size="2">
       <ion-button fill="clear" (click)="back()">
         <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
@@ -86,7 +86,7 @@
       <h2>{{ viewTitle }}</h2>
     </ion-col>
  
-    // Move forward one screen of the slides 
+    <!-- // Move forward one screen of the slides  -->
     <ion-col size="2">
       <ion-button fill="clear" (click)="next()">
         <ion-icon name="arrow-forward" slot="icon-only"></ion-icon>
@@ -108,4 +108,4 @@
   </calendar>
  
 </ion-content>
- -->
+ 
